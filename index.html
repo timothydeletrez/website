@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="html light">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Timothy Deletrez | 🏠 Home</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <img class="logo" src="imgs/logo.png" alt="Logo">
+            <div class="navbar">
+                <a href="#" class="navbar-item navbar-text">
+                    Contactez-moi
+                </a>
+                <a href="#" class="navbar-item navbar-text">
+                    À propos
+                </a>
+                <a href="#" class="navbar-item navbar-text">
+                    Projets
+                </a>
+                <a href="#" class="navbar-item navbar-text">
+                    Documentation
+                </a>
+                <a href="#" class="navbar-item navbar-icon darkmode-button">
+                    <ion-icon name="contrast"></ion-icon>
+                </a>
+                <a href="#" class="navbar-item navbar-icon search-button">
+                    <ion-icon name="search"></ion-icon>
+                </a>
+            </div>
+        </header>
+        <section class="banner">
+            <h1 class="banner-title">
+                Hey <span class="hand">👋</span>
+            </h1>
+            <h1 class="banner-subtitle">
+                Futur étudiant en informatique et électronique, passioné par le développement et l'UI et l'UX Design. 
+                <br>Je suis née le 6 Avril, je vie en Belgique et j'étudie à l'Athénée Royal Paul Brusson
+                <br>Je sais codé en différant language comme l'HTML, le CSS, ou le JavaScript  
+            </h1>
+            <div class="banner-calltoaction">
+                <a href="#" class="banner-button">Projets</a>
+                <a href="#" class="banner-button">Blog</a>
+                <a href="#" class="banner-button">
+                    <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+                    Github
+                </a>
+            </div>
+        </section>
+        <section class="projets">
+
+        </section>
+    </body>
+    <script>
+
+        // Bouton Darkmode H-S
+
+        var dmbutton = document.querySelector(".darkmode-button")
+        var htmldoc = document.querySelector(".html")
+
+        dmbutton.addEventListener('click',()=>{
+            alert("Le mode sombre n'est actuellement pas disponible mais le sera bientôt, Merci de votre patience !")
+        })
+
+        // Bouton Recherche H-S
+
+        var sbutton = document.querySelector(".search-button")
+
+        sbutton.addEventListener('click',()=>{
+            alert("Le mode recherche n'est actuellement pas disponible mais le sera bientôt, Merci de votre patience !")
+        })
+
+    </script>
+</html>
