@@ -104,6 +104,7 @@ html {
 
 .banner-calltoaction {
     display: flex;
+
 }
 
 .banner-button {
@@ -142,26 +143,89 @@ html {
     height: 40vh;
 }
 
-@keyframes hand-anim {
-    0% {
-        transform: none;
+/* ---------------------------------------------------------------- */
+/*                               Footer                             */
+/* ---------------------------------------------------------------- */
+
+.footer {
+    background-color: #1e1c21;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    padding: 20px;
+    display: flex;
+}
+
+.footer-left p {
+    color: white;
+    font-family: Inter;
+}
+
+.footer-left p:hover {
+    cursor: pointer;
+}
+
+.footer-left p:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #7761F8;
+    transition: all 0.5s ease;
+}
+
+.footer-left p:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+.footer-right {
+    padding: 20px;
+    display: flex;  
+}
+
+.footer-right p {
+    padding: 0px 10px;
+    color: white;
+    font-family: Inter;
+}
+
+.footer-right p:hover {
+    cursor: pointer;
+}
+
+.footer-right p:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #7761F8;
+    transition: all 0.5s ease;
+}
+
+.footer-right p:hover::after {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------- */
+/*                           Version mobile                         */
+/* ---------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+    .footer {
+        background-color: #ff0000;
+        display: block;
     }
 
-    25% {
-        transform: rotate(20deg);
-        background-color: red;
+    .footer-right {
+        display: block;
     }
-
-    50% {
-        rotate: 20deg;
-    }
-
-    75% {
-        transform: rotate(10deg);
-        background-color: red;
-    }
-
-    100% {
-        transform: none;
+    .footer-right p {
+        margin-top: 10px;
     }
 }
